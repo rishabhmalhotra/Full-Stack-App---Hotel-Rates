@@ -1,0 +1,3 @@
+Make sure redis-server is configured in the directory (https://redis.io/topics/quickstart)
+Simply, grant the ./runserver script executable permissions and it will do everything required.
+Then, simply navigate to http://127.0.0.1:5000/ in your browser!

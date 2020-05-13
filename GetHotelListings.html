@@ -1,0 +1,59 @@
+<html>
+  <header>
+    <div class="overlay"></div>
+    </div>
+  </header>
+
+<head>
+  <title>Demo Form</title>
+  <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <div class="container"><br>
+    <center>
+      <h2>Fullstack App Sample Demo</h2>
+    </center>
+  </div>
+
+  <div class=container"><br>
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-4">
+        <form action="" method="POST" role="form">
+          {{ form.csrf }}
+          <div class="form-group">
+
+            <label for="city">City:</label>
+            <input type="text" class="form-control" id="city" name="city" placeholder="Please enter city name">
+            <br>
+            <label for="checkin">Checkin:</label>
+            <input type="text" class="form-control" id="checkin" name="checkin"
+              placeholder="Please enter checkin details">
+            <br>
+            <label for="checkout">Checkout:</label>
+            <input type="text" class="form-control" id="checkout" name="checkout"
+              placeholder="Please enter checkout details">
+            <br>
+
+          </div>
+          <br>
+
+          <center>
+            <button type="submit" class="btn btn-success">Submit!</button>
+          </center>
+        </form>
+
+        <br>
+      </div>
+      <br>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+
+</html>

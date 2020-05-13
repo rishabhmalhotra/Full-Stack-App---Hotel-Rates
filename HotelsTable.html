@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        </style>
+   </head>
+   <body>
+       <center>
+           <h2>Common Hotels Data Retrieved</h2>
+        </center>
+        <table>
+            <tr>
+                <th>Hotel ID</th>
+                <th>Hotel Name</th>
+                <th>Number of Reviews</th>
+                <th>Address</th>
+                <th>Number of Stars</th>
+                <th>Amenities</th>
+                <th>Image</th>
+                <th>Snaptravel Price</th>
+                <th>Hotels.com Price</th>
+            </tr>
+            {% for key, value in data.items() %}
+            <tr>
+                <td align="center"><b>{{key}}</b></td>
+                <td align="center">{{value.hotel_name}}</td>
+                <td align="center">{{value.num_reviews}}</td>
+                <td align="center">{{value.address}}</td>
+                <td align="center">{{value.num_stars}}</td>
+                <td align="center">
+                    {% for amenity in value.amenities %}
+                    {{amenity}}
+                    <br>
+                    {% endfor %}
+                </td>
+                <td align="center"> <img src="{{value.image_url}}" width="230px" height="auto" alt="Hotel Image"></td>
+                <td align="center">{{value.snaptravel_price}}</td>
+                <td align="center">{{value.hotelscom_price}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+   </body>
+</html>
