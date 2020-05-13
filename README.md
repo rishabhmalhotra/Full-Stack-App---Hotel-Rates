@@ -53,3 +53,7 @@ The app then caches these responses in the server, in whatever way that seems fi
 **Step 3**
 
 After both these calls have returned, we take **only** the hotels that appear in both the responses and return an html table with the data.
+
+## Output
+![Screenshot](Sample_Output_1.png)
+![Screenshot](Sample_Output_2.png)
