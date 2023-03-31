@@ -2,5 +2,5 @@ Flask==1.1.1
 Flask-WTF==0.9
 werkzeug==0.16.0
 rope==0.16.0
-redis==3.2.1
+redis==4.4.4
 requests==2.24.0
