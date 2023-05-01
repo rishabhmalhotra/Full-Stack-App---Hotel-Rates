@@ -1,4 +1,4 @@
-Flask==1.1.1
+Flask==2.3.2
 Flask-WTF==0.9
 werkzeug==0.16.0
 rope==0.16.0
